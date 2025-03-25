@@ -21,7 +21,30 @@ Betty.vim is a Neovim plugin that takes your coding experience to the next level
 
 ### Using a Plugin Manager (Recommended)
 
-//TODO
+**Lazy.nvim**
+```lua
+
+{
+  "ThePrimeJnr/betty.vim",
+  config = function()
+    require("betty").setup()
+  end,
+},
+
+```
+
+
+**Packer.nvim**
+```lua
+
+use {
+  "ThePrimeJnr/betty.vim",
+  config = function()
+    require("betty").setup()
+  end,
+}
+
+```
 
 ### Manual Installation
 
